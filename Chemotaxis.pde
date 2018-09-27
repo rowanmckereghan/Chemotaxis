@@ -1,8 +1,7 @@
  //declare bacteria variables here   
  void setup()   
  {     
- 	System.out.print("Rowan has always had the biggest gay");
- 	//initialize bacteria variables here   
+	size(300, 300) 	//initialize bacteria variables here   
  }   
  void draw()   
  {    
@@ -10,5 +9,18 @@
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+ 	int x, y, colorBac;
+ 	Bacteria()
+ 	{
+
+ 	}
+ 	void move()
+ 	{
+
+ 	}
+ 	void show() 
+ 	{
+ 		
+ 	}
+
  }    
