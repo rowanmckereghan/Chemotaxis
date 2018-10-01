@@ -1,5 +1,5 @@
- //declare bacteria variables here   
- void setup()   
+Bacteria gang[] = new Bacteria[1000];
+void setup()   
  {     
 	size(300, 300) 	//initialize bacteria variables here   
  }   
