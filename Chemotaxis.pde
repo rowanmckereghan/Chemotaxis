@@ -1,4 +1,5 @@
-Bacteria gang[] = new Bacteria[50];
+
+Bacteria gang[] = new Bacteria[100];
 void setup()   
  {     
 	size(500, 500);
@@ -14,9 +15,15 @@ void setup()
 background(0);
  fill(255);
 ellipse(250, 250, 100, 100);
-/*beginShape(kind);
-vertex(495, 495);
-*/
+beginShape();
+noStroke();
+fill(254, 254, 254, 100);
+vertex(285, 285);
+vertex(285, 215);
+vertex(25, -25);
+vertex(-25, 25);
+vertex(215, 285);
+endShape();
   for (int i= 0; i < gang.length; i++)
   {
     gang[i].show();
