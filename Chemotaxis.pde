@@ -29,28 +29,34 @@ endShape();
     gang[i].show();
     gang[i].move();
   } 
+  fill(255);
+  textSize(20);
+  text("Live footage of your bloodstream right now", 40, 400);
 }  
- class Bacteria    
+ class Bacteria
  {     
- 	int x, y;
- 	color colorBac;
+ 	public int x, y;
+ 	public color colorBac;
  	
  	Bacteria()
  	{
  		x = y = (int)(Math.random()*500);
  		colorBac = color(255, 0, 0);
  	}
- 	void move()
+ 	public void move()
  	{
  		x = x+ (int)(Math.random()*7)-2;
     	y = y + (int)(Math.random()*7)-2;
 
  	}
- 	void show() 
+ 	public void show() 
  	{
  		fill(colorBac);
  		if (get(x,y) == color(255))
  		ellipse(x, y, 10, 10);
+ 	if (x > 400 || y > 400)
+ 		x = y = (int)(Math.random()*500);
  	}
 
  }    
+
